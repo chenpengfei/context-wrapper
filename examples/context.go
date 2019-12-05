@@ -15,8 +15,6 @@ func main() {
 		p.Signal(os.Interrupt)
 	}
 
-	select {
-	case <-ctx.Done():
-		fmt.Println("I have to go")
-	}
+	<-ctx.Done()
+	fmt.Println("I have to go")
 }
