@@ -31,10 +31,7 @@ download:
 	go mod download
 
 run:
-	go run cmd/app/main.go
-
-benchmark:
-	go test -bench=. pkg/tools/cal_test.go pkg/tools/cal.go
+	go run examples/context.go
 
 lint:
 	golangci-lint run ./...

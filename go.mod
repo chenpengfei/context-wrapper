@@ -1,4 +1,4 @@
-module github.com/chenpengfei/golang-starter
+module github.com/chenpengfei/context-wrapper
 
 go 1.12
 

@@ -10,6 +10,3 @@ DIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 # Change into that directory
 cd "$DIR"
 
-rm -rf test/mocks
-mkdir -p test/mocks/tools
-mockgen -package=mtools -source=pkg/tools/cal.go > test/mocks/tools/cal.go
